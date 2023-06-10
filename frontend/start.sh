@@ -5,7 +5,7 @@ DEV_ACCOUNT_FILE="${CONTRACT_DIRECTORY}/neardev/dev-account.env"
 
 start () {
   echo The app is starting!
-  env-cmd -f $DEV_ACCOUNT_FILE parcel index.html --no-cache
+  env-cmd -f $DEV_ACCOUNT_FILE parcel index.html -p 1234 --host 0.0.0.0
 }
 
 alert () {
